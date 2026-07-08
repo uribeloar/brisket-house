@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brisket House GDL — BBQ Texano en Jardines del Sol, Zapopan | Brisket Ahumado, Pulled Pork y Costillas</title>
+<meta name="description" content="Brisket House en Jardines del Sol, Zapopan: auténtico BBQ texano. Real Wood, Real Smoke, Real BBQ. Brisket ahumado, pulled pork, baby back ribs y combos Texas para compartir. Pide por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        noche:'#16110d', carbon:'#221913', carbon2:'#2e2118',
+        fuego:'#d9541e', fuegocl:'#ef7233',
+        rojo:'#a02a1a',
+        ambar:'#e8a03d',
+        crema:'#f0e6d2', cremadim:'#b6a98f'
+      },
+      fontFamily: { display:['"Alfa Slab One"','serif'], sans:['Barlow','sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{background:#16110d;overflow-x:hidden}
+  .text-fuego-grad{background:linear-gradient(120deg,#e8a03d,#d9541e 55%,#a02a1a);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.on{opacity:1;transform:none}
+  .lift{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+  .lift:hover{transform:translateY(-6px);box-shadow:0 22px 44px -22px rgba(0,0,0,.85)}
+  .ken{transition:transform 8s ease-out}
+  .ken:hover{transform:scale(1.07)}
+  .nav-lnk{position:relative}
+  .nav-lnk::after{content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;background:#d9541e;transition:width .3s}
+  .nav-lnk:hover::after{width:100%}
+</style>
+</head>
+<body class="bg-noche text-crema font-sans antialiased overflow-x-hidden">
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <nav class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-[70px]">
+    <a href="#inicio" class="flex flex-col leading-none">
+      <span class="font-display text-xl sm:text-2xl text-crema tracking-tight">BRISKET <span class="text-fuego">HOUSE</span></span>
+      <span class="text-[8px] sm:text-[9px] tracking-[.32em] text-cremadim mt-1">REAL WOOD · REAL SMOKE · REAL BBQ</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-[13px] font-600 tracking-[.08em] uppercase text-cremadim">
+      <a href="#carta" class="nav-lnk hover:text-crema transition">Combos</a>
+      <a href="#nosotros" class="nav-lnk hover:text-crema transition">Nosotros</a>
+      <a href="#galeria" class="nav-lnk hover:text-crema transition">Galería</a>
+      <a href="#ubicacion" class="nav-lnk hover:text-crema transition">Ubicación</a>
+      <a href="#pedir" class="ml-1 px-5 py-2.5 rounded-md bg-fuego text-crema font-700 tracking-wide hover:bg-fuegocl transition">PEDIR</a>
+    </div>
+    <button id="hbtn" class="md:hidden w-11 h-11 flex flex-col items-center justify-center gap-[5px]" aria-label="Menú">
+      <span class="block w-6 h-[2px] bg-crema"></span>
+      <span class="block w-6 h-[2px] bg-crema"></span>
+      <span class="block w-6 h-[2px] bg-crema"></span>
+    </button>
+  </nav>
+  <div id="mmenu" class="md:hidden hidden bg-carbon/98 backdrop-blur border-t border-fuego/20">
+    <div class="px-6 py-5 flex flex-col gap-4 text-[15px] font-600 tracking-wide uppercase text-cremadim">
+      <a href="#carta" class="mm hover:text-crema">Combos</a>
+      <a href="#nosotros" class="mm hover:text-crema">Nosotros</a>
+      <a href="#galeria" class="mm hover:text-crema">Galería</a>
+      <a href="#ubicacion" class="mm hover:text-crema">Ubicación</a>
+      <a href="#pedir" class="mm mt-1 px-5 py-3 rounded-md bg-fuego text-crema font-700 text-center">PEDIR AHORA</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="relative min-h-[100svh] flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="img/hero.jpg" alt="Charola de BBQ texano de Brisket House" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-noche via-noche/80 to-noche/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-noche/90 via-transparent to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 w-full pt-24 pb-12">
+    <div class="max-w-2xl">
+      <div class="reveal inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-fuego/15 border border-fuego/40 text-ambar text-xs sm:text-sm font-600 tracking-wide uppercase">
+        <span class="w-2 h-2 rounded-full bg-fuego animate-pulse"></span> Jardines del Sol · Zapopan
+      </div>
+      <h1 class="reveal font-display leading-[.9] text-5xl sm:text-7xl md:text-8xl">
+        <span class="block text-crema">AUTÉNTICO</span>
+        <span class="block text-fuego-grad">BBQ TEXANO</span>
+      </h1>
+      <p class="reveal mt-6 text-lg text-crema/80 font-300 leading-relaxed max-w-xl">
+        Brisket ahumado bajo y lento, pulled pork, baby back ribs y salsa BBQ de la casa. <span class="text-ambar font-500">Real Wood, Real Smoke, Real BBQ.</span> Para compartir con los tuyos.
+      </p>
+      <div class="reveal mt-9 flex flex-col sm:flex-row gap-3.5">
+        <a href="#carta" class="px-8 py-4 rounded-md bg-fuego text-crema font-700 tracking-[.06em] uppercase text-sm hover:bg-fuegocl transition text-center shadow-xl shadow-fuego/20">Ver los combos</a>
+        <a href="#pedir" class="px-8 py-4 rounded-md border border-crema/30 text-crema font-600 tracking-[.06em] uppercase text-sm hover:border-fuego hover:text-fuego transition text-center">Pedir ahora</a>
+      </div>
+      <div class="reveal mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-cremadim">
+        <span class="flex items-center gap-2"><span class="text-fuego text-base">★</span> 4.7 · 1,228 reseñas</span>
+        <span class="hidden sm:block w-px h-4 bg-crema/25"></span>
+        <span class="flex items-center gap-2">🔥 Ahumado en leña</span>
+        <span class="hidden sm:block w-px h-4 bg-crema/25"></span>
+        <span class="flex items-center gap-2">🍽️ Para compartir</span>
+      </div>
+    </div>
+  </div>
+  <a href="#franja" class="absolute bottom-7 left-1/2 -translate-x-1/2 text-crema/50 hover:text-fuego transition animate-bounce z-10" aria-label="Bajar">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- FRANJA -->
+<section id="franja" class="bg-fuego text-crema">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-4 text-center font-700 uppercase tracking-[.06em] text-xs sm:text-sm">
+    <div class="reveal flex items-center justify-center gap-2">🥩 Brisket ahumado</div>
+    <div class="reveal flex items-center justify-center gap-2">🍖 Pulled pork</div>
+    <div class="reveal flex items-center justify-center gap-2">🍗 Baby back ribs</div>
+    <div class="reveal flex items-center justify-center gap-2">🔥 Salsa de la casa</div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="reveal relative order-2 md:order-1">
+      <div class="absolute -inset-3 border-2 border-fuego/30 rounded-xl -z-10 translate-x-3 translate-y-3"></div>
+      <div class="overflow-hidden rounded-xl">
+        <img src="img/about.jpg" alt="Local de Brisket House" class="w-full h-[380px] sm:h-[470px] object-cover ken">
+      </div>
+    </div>
+    <div class="order-1 md:order-2">
+      <div class="reveal flex items-center gap-3 mb-5">
+        <span class="h-[3px] w-9 bg-fuego"></span>
+        <span class="text-xs tracking-[.3em] text-fuego uppercase font-700">Nosotros</span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl leading-[1] text-crema">BAJO Y <span class="text-fuego-grad">LENTO.</span></h2>
+      <p class="reveal mt-6 text-cremadim leading-relaxed text-[17px]">El buen brisket no tiene prisa. Ahumamos con leña real durante horas, hasta que la carne se deshace sola y agarra ese sabor a humo que no se finge. Puro método texano, aquí en Zapopan.</p>
+      <p class="reveal mt-4 text-cremadim leading-relaxed text-[17px]">Brisket, pulled pork, baby back ribs y salchichas, con guarniciones caseras y salsa BBQ de la casa. Nuestros <span class="text-crema font-500">combos Texas</span> están hechos para compartir en buena compañía.</p>
+      <div class="reveal mt-8 grid grid-cols-3 gap-4 text-center">
+        <div class="bg-carbon rounded-lg py-5 border border-fuego/15"><div class="font-display text-fuego-grad text-3xl">4.7</div><div class="text-[11px] tracking-[.1em] uppercase text-cremadim mt-1">Estrellas</div></div>
+        <div class="bg-carbon rounded-lg py-5 border border-fuego/15"><div class="font-display text-fuego-grad text-3xl">1.2K</div><div class="text-[11px] tracking-[.1em] uppercase text-cremadim mt-1">Reseñas</div></div>
+        <div class="bg-carbon rounded-lg py-5 border border-fuego/15"><div class="font-display text-fuego-grad text-2xl mt-1">100%</div><div class="text-[11px] tracking-[.1em] uppercase text-cremadim mt-1">Leña real</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTA / COMBOS -->
+<section id="carta" class="py-20 sm:py-28 bg-carbon border-y border-fuego/15">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="reveal flex items-center justify-center gap-3 mb-4">
+        <span class="h-[3px] w-9 bg-fuego"></span><span class="text-xs tracking-[.3em] text-fuego uppercase font-700">La Carta</span><span class="h-[3px] w-9 bg-fuego"></span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl text-crema">COMBOS TEXAS</h2>
+      <p class="reveal mt-4 text-cremadim text-[17px]">Brisket + pulled pork + baby back + salchicha + guarniciones. Para compartir.</p>
+    </div>
+
+    <!-- Destacados con foto -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+      <div class="reveal group relative overflow-hidden rounded-xl h-56 lift"><img src="img/brisket.jpg" alt="Brisket ahumado y costillas" class="w-full h-full object-cover ken"><div class="absolute inset-0 bg-gradient-to-t from-noche via-noche/25 to-transparent"></div><div class="absolute bottom-0 p-4"><h3 class="font-display text-lg text-ambar">BRISKET</h3><p class="text-xs text-crema/80">Ahumado bajo y lento</p></div></div>
+      <div class="reveal group relative overflow-hidden rounded-xl h-56 lift"><img src="img/charola.jpg" alt="Charola surtida de BBQ" class="w-full h-full object-cover ken"><div class="absolute inset-0 bg-gradient-to-t from-noche via-noche/25 to-transparent"></div><div class="absolute bottom-0 p-4"><h3 class="font-display text-lg text-ambar">BABY BACK RIBS</h3><p class="text-xs text-crema/80">Costillas con salsa BBQ</p></div></div>
+      <div class="reveal group relative overflow-hidden rounded-xl h-56 lift"><img src="img/pulled.jpg" alt="Torta de pulled pork" class="w-full h-full object-cover ken"><div class="absolute inset-0 bg-gradient-to-t from-noche via-noche/25 to-transparent"></div><div class="absolute bottom-0 p-4"><h3 class="font-display text-lg text-ambar">PULLED PORK</h3><p class="text-xs text-crema/80">Cerdo deshebrado ahumado</p></div></div>
+      <div class="reveal group relative overflow-hidden rounded-xl h-56 lift"><img src="img/torta.jpg" alt="Sándwich de brisket" class="w-full h-full object-cover ken"><div class="absolute inset-0 bg-gradient-to-t from-noche via-noche/25 to-transparent"></div><div class="absolute bottom-0 p-4"><h3 class="font-display text-lg text-ambar">SÁNDWICHES</h3><p class="text-xs text-crema/80">Brisket y pulled pork</p></div></div>
+    </div>
+
+    <!-- Combos precios -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+      <div class="reveal bg-noche rounded-xl border border-fuego/15 p-6 lift">
+        <div class="font-display text-2xl text-crema mb-1">TEXAS 1</div>
+        <div class="font-display text-3xl text-fuego-grad mb-3">$450</div>
+        <p class="text-sm text-cremadim leading-relaxed">Brisket 100g + Pulled Pork 100g + Baby Back ¼ rack + 1 guarnición.</p>
+      </div>
+      <div class="reveal bg-noche rounded-xl border border-fuego/15 p-6 lift">
+        <div class="font-display text-2xl text-crema mb-1">TEXAS 3</div>
+        <div class="font-display text-3xl text-fuego-grad mb-3">$990</div>
+        <p class="text-sm text-cremadim leading-relaxed">Brisket 160g + Pulled Pork 160g + Baby Back ½ rack + 1 salchicha + 3 guarniciones.</p>
+      </div>
+      <div class="reveal bg-gradient-to-br from-fuego to-rojo rounded-xl p-6 lift relative">
+        <span class="absolute top-3 right-3 text-[10px] bg-crema text-rojo font-700 px-2 py-0.5 rounded uppercase tracking-wide">Popular</span>
+        <div class="font-display text-2xl text-crema mb-1">TEXAS 5</div>
+        <div class="font-display text-3xl text-crema mb-3">$1,600</div>
+        <p class="text-sm text-crema/90 leading-relaxed">Brisket 300g + Pulled Pork 300g + Baby Back 1 rack + 2 salchichas + 5 guarniciones.</p>
+      </div>
+      <div class="reveal bg-noche rounded-xl border border-fuego/15 p-6 lift">
+        <div class="font-display text-2xl text-crema mb-1">TEXAS 8</div>
+        <div class="font-display text-3xl text-fuego-grad mb-3">$2,500</div>
+        <p class="text-sm text-cremadim leading-relaxed">Brisket 450g + Pulled Pork 450g + Baby Back 1½ rack + 3 salchichas + 8 guarniciones.</p>
+      </div>
+    </div>
+    <div class="reveal max-w-5xl mx-auto mt-6 grid sm:grid-cols-2 gap-4">
+      <div class="bg-noche/60 rounded-xl border border-fuego/10 p-5">
+        <h4 class="font-display text-lg text-ambar mb-2">GUARNICIONES</h4>
+        <p class="text-sm text-cremadim">Básicas $80 — ensalada de col, ensalada de papa, frijoles texanos, elote dulce. Especiales $100 — puré artesanal, mac &amp; cheese, cream corn.</p>
+      </div>
+      <div class="bg-noche/60 rounded-xl border border-fuego/10 p-5 flex items-center">
+        <p class="text-sm text-crema">🔥 Todos los combos incluyen bollitos y salsa BBQ de la casa. <span class="text-ambar">Tip:</span> haz tu pedido con 1 día de anticipación para asegurar que alcance de todo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="reveal flex items-center justify-center gap-3 mb-4">
+        <span class="h-[3px] w-9 bg-fuego"></span><span class="text-xs tracking-[.3em] text-fuego uppercase font-700">Galería</span><span class="h-[3px] w-9 bg-fuego"></span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl text-crema">DEL AHUMADOR A TU MESA</h2>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="reveal overflow-hidden rounded-xl h-[300px] sm:h-[400px]"><img src="img/g1.jpg" alt="Charola de carnes ahumadas" class="w-full h-full object-cover ken"></div>
+      <div class="reveal overflow-hidden rounded-xl h-[300px] sm:h-[400px]"><img src="img/g2.jpg" alt="Guarniciones caseras" class="w-full h-full object-cover ken"></div>
+      <div class="reveal overflow-hidden rounded-xl h-[300px] sm:h-[400px]"><img src="img/g3.jpg" alt="Local de Brisket House" class="w-full h-full object-cover ken"></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="py-20 sm:py-28 bg-carbon border-y border-fuego/15">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="reveal flex items-center justify-center gap-3 mb-4">
+        <span class="h-[3px] w-9 bg-fuego"></span><span class="text-xs tracking-[.3em] text-fuego uppercase font-700">Reseñas</span><span class="h-[3px] w-9 bg-fuego"></span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl text-crema">LO QUE DICEN</h2>
+      <div class="reveal mt-4 flex items-center justify-center gap-1 text-fuego text-xl">★★★★<span class="text-fuego/40">★</span><span class="ml-2 text-cremadim text-sm">4.7 en Google · 1,228 reseñas</span></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <figure class="reveal bg-noche rounded-xl p-7 border border-fuego/10">
+        <div class="text-fuego text-lg mb-3">★★★★★</div>
+        <blockquote class="text-crema/90 leading-relaxed text-[15px]">“Auténtico sabor a ahumado y muy buena salsa BBQ de la casa. ¡Buen trabajo! 👏”</blockquote>
+        <figcaption class="mt-5 text-sm text-cremadim">— Reseña en Google</figcaption>
+      </figure>
+      <figure class="reveal bg-noche rounded-xl p-7 border border-fuego/10">
+        <div class="text-fuego text-lg mb-3">★★★★★</div>
+        <blockquote class="text-crema/90 leading-relaxed text-[15px]">“El Combo Texas 3 —brisket, pulled pork, baby back, salchicha y guarniciones— 100% recomendado. Ideal para compartir hasta 4 personas.”</blockquote>
+        <figcaption class="mt-5 text-sm text-cremadim">— Valeria T. · Local Guide</figcaption>
+      </figure>
+      <figure class="reveal bg-noche rounded-xl p-7 border border-fuego/10">
+        <div class="text-fuego text-lg mb-3">★★★★★</div>
+        <blockquote class="text-crema/90 leading-relaxed text-[15px]">“Nunca defrauda. El brisket es la recomendación número uno: jugoso y bien ahumado. Sus costillas BBQ, muy buenas.”</blockquote>
+        <figcaption class="mt-5 text-sm text-cremadim">— Viccenzo · Local Guide</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PEDIR -->
+<section id="pedir" class="py-20 sm:py-28 relative overflow-hidden">
+  <div class="absolute inset-0 -z-10"><img src="img/hero.jpg" alt="" class="w-full h-full object-cover opacity-20"><div class="absolute inset-0 bg-noche/88"></div></div>
+  <div class="max-w-2xl mx-auto px-5 sm:px-8">
+    <div class="text-center mb-10">
+      <div class="reveal flex items-center justify-center gap-3 mb-4">
+        <span class="h-[3px] w-9 bg-fuego"></span><span class="text-xs tracking-[.3em] text-fuego uppercase font-700">Pedir</span><span class="h-[3px] w-9 bg-fuego"></span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl text-crema">HAZ TU PEDIDO</h2>
+      <p class="reveal mt-4 text-cremadim text-[17px]">Ordena tu combo y te confirmamos por WhatsApp. Recuerda: 1 día de anticipación asegura tu brisket.</p>
+    </div>
+    <form id="form" class="reveal bg-carbon rounded-xl p-6 sm:p-8 space-y-4 border border-fuego/15">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs tracking-[.1em] uppercase text-cremadim mb-2 font-600">Nombre</label>
+          <input id="f-nombre" type="text" required placeholder="Tu nombre" class="w-full bg-noche border border-fuego/20 rounded-lg px-4 py-3 text-crema placeholder-cremadim/40 focus:border-fuego focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs tracking-[.1em] uppercase text-cremadim mb-2 font-600">Combo</label>
+          <select id="f-combo" class="w-full bg-noche border border-fuego/20 rounded-lg px-4 py-3 text-crema focus:border-fuego focus:outline-none transition">
+            <option>Texas 1 — $450</option>
+            <option>Texas 3 — $990</option>
+            <option>Texas 5 — $1,600</option>
+            <option>Texas 8 — $2,500</option>
+            <option>Otro / por armar</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs tracking-[.1em] uppercase text-cremadim mb-2 font-600">¿Para cuándo?</label>
+          <input id="f-dia" type="text" placeholder="Ej. sábado 3pm" class="w-full bg-noche border border-fuego/20 rounded-lg px-4 py-3 text-crema placeholder-cremadim/40 focus:border-fuego focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs tracking-[.1em] uppercase text-cremadim mb-2 font-600">Personas</label>
+          <input id="f-personas" type="text" placeholder="Ej. 4" class="w-full bg-noche border border-fuego/20 rounded-lg px-4 py-3 text-crema placeholder-cremadim/40 focus:border-fuego focus:outline-none transition">
+        </div>
+      </div>
+      <button type="submit" class="w-full flex items-center justify-center gap-2.5 bg-fuego text-crema font-700 tracking-[.06em] uppercase text-sm py-4 rounded-lg hover:bg-fuegocl transition">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.31-1.95 1.36-.5.05-.5.41-3.15-.66-2.66-1.07-4.3-3.79-4.43-3.97-.13-.18-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.24-.26.52-.32.7-.32.17 0 .35 0 .5.01.16.01.38-.06.59.45.24.59.81 2.03.88 2.18.07.15.12.32.02.5-.09.18-.14.29-.28.45-.14.16-.29.35-.42.47-.14.13-.28.28-.12.55.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>
+        Pedir por WhatsApp
+      </button>
+      <p class="text-center text-[11px] text-cremadim/60">Se abrirá WhatsApp con tu pedido listo para enviar.</p>
+    </form>
+  </div>
+</section>
+
+<!-- UBICACION -->
+<section id="ubicacion" class="py-20 sm:py-28 bg-carbon border-t border-fuego/15">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
+    <div>
+      <div class="reveal flex items-center gap-3 mb-5">
+        <span class="h-[3px] w-9 bg-fuego"></span><span class="text-xs tracking-[.3em] text-fuego uppercase font-700">Ubicación</span>
+      </div>
+      <h2 class="reveal font-display text-3xl sm:text-4xl md:text-5xl text-crema mb-8">VISÍTANOS EN LA PERLA</h2>
+      <ul class="space-y-6 text-cremadim">
+        <li class="reveal flex gap-4">
+          <span class="text-fuego mt-1 shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.3-7-11a7 7 0 0114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <div><div class="text-crema font-600 mb-0.5">Dirección</div>C. Quetzalcóatl 4406, Jardines del Sol, 45050 Zapopan, Jal.</div>
+        </li>
+        <li class="reveal flex gap-4">
+          <span class="text-fuego mt-1 shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><div class="text-crema font-600 mb-1">Horario</div>
+            <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-0.5 text-sm">
+              <span>Lun – Sáb</span><span class="text-crema/90">12:30 – 21:00</span>
+              <span>Domingo</span><span class="text-crema/90">12:30 – 20:00</span>
+            </div>
+          </div>
+        </li>
+        <li class="reveal flex gap-4">
+          <span class="text-fuego mt-1 shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></span>
+          <div><div class="text-crema font-600 mb-0.5">Pedidos · WhatsApp</div><a href="https://wa.me/523310888915" class="hover:text-fuego transition">33 1088 8915</a></div>
+        </li>
+      </ul>
+      <div class="reveal mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Brisket%20House%20Quetzalcoatl%204406%20Jardines%20del%20Sol%20Zapopan" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-fuego text-crema font-700 tracking-wide uppercase text-sm hover:bg-fuegocl transition">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 20l-5.4 2.6a1 1 0 01-1.4-1V6.5a1 1 0 01.6-.9L9 3m0 17l6-3m-6 3V3m6 14l5.4-2.6a1 1 0 00.6-.9V1.9a1 1 0 00-1.4-.9L15 3.6m0 13.4V3.6m0 0L9 3"/></svg>
+          Cómo llegar
+        </a>
+        <a href="https://wa.me/523310888915?text=%C2%A1Hola%20Brisket%20House!%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md border border-fuego/40 text-crema font-600 tracking-wide uppercase text-sm hover:border-fuego hover:text-fuego transition">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.31-1.95 1.36-.5.05-.5.41-3.15-.66-2.66-1.07-4.3-3.79-4.43-3.97-.13-.18-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.24-.26.52-.32.7-.32.17 0 .35 0 .5.01.16.01.38-.06.59.45.24.59.81 2.03.88 2.18.07.15.12.32.02.5-.09.18-.14.29-.28.45-.14.16-.29.35-.42.47-.14.13-.28.28-.12.55.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="reveal">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Brisket%20House%20Quetzalcoatl%204406%20Jardines%20del%20Sol%20Zapopan" target="_blank" rel="noopener" class="block overflow-hidden rounded-xl border border-fuego/20 group relative">
+        <img src="img/mapa.jpg" alt="Mapa de Brisket House en Jardines del Sol, Zapopan" class="w-full h-[340px] sm:h-[420px] object-cover group-hover:scale-105 transition duration-700">
+        <span class="absolute bottom-4 left-1/2 -translate-x-1/2 px-5 py-2.5 rounded-md bg-noche/85 backdrop-blur text-crema text-sm tracking-wide uppercase font-600 border border-fuego/30 group-hover:bg-fuego transition whitespace-nowrap">Abrir en Google Maps →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-noche border-t border-fuego/15 pt-14 pb-8">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="grid sm:grid-cols-3 gap-8 mb-10">
+      <div>
+        <div class="font-display text-xl text-crema">BRISKET <span class="text-fuego">HOUSE</span></div>
+        <div class="text-[9px] tracking-[.28em] text-cremadim mt-1 mb-4">REAL WOOD · REAL SMOKE · REAL BBQ</div>
+        <p class="text-sm text-cremadim leading-relaxed">Auténtico BBQ texano ahumado en leña, en Jardines del Sol, Zapopan.</p>
+      </div>
+      <div>
+        <div class="text-xs tracking-[.24em] uppercase text-fuego mb-4 font-700">Navega</div>
+        <ul class="space-y-2.5 text-sm text-cremadim">
+          <li><a href="#carta" class="hover:text-crema transition">Combos Texas</a></li>
+          <li><a href="#galeria" class="hover:text-crema transition">Galería</a></li>
+          <li><a href="#pedir" class="hover:text-crema transition">Hacer pedido</a></li>
+          <li><a href="#ubicacion" class="hover:text-crema transition">Ubicación</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs tracking-[.24em] uppercase text-fuego mb-4 font-700">Contacto</div>
+        <ul class="space-y-2.5 text-sm text-cremadim">
+          <li><a href="https://wa.me/523310888915" class="hover:text-crema transition">Pedidos: 33 1088 8915</a></li>
+          <li>C. Quetzalcóatl 4406, Jardines del Sol, Zapopan</li>
+          <li>Lun–Sáb 12:30–21:00 · Dom 12:30–20:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-px w-full bg-fuego/20 mb-6"></div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cremadim/60">
+      <span>© <span id="year"></span> Brisket House GDL. Todos los derechos reservados.</span>
+      <span>Jardines del Sol · Zapopan, Jalisco</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/523310888915?text=%C2%A1Hola%20Brisket%20House!%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] shadow-xl shadow-black/40 flex items-center justify-center hover:scale-110 transition">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.31-1.95 1.36-.5.05-.5.41-3.15-.66-2.66-1.07-4.3-3.79-4.43-3.97-.13-.18-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.24-.26.52-.32.7-.32.17 0 .35 0 .5.01.16.01.38-.06.59.45.24.59.81 2.03.88 2.18.07.15.12.32.02.5-.09.18-.14.29-.28.45-.14.16-.29.35-.42.47-.14.13-.28.28-.12.55.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const hbtn=document.getElementById('hbtn'), mmenu=document.getElementById('mmenu');
+  hbtn.addEventListener('click',()=>{mmenu.classList.toggle('hidden');});
+  document.querySelectorAll('.mm').forEach(a=>a.addEventListener('click',()=>mmenu.classList.add('hidden')));
+  const nav=document.getElementById('nav');
+  const onScroll=()=>{ if(window.scrollY>40){nav.classList.add('bg-noche/95','backdrop-blur','shadow-lg','shadow-black/40');}else{nav.classList.remove('bg-noche/95','backdrop-blur','shadow-lg','shadow-black/40');} };
+  onScroll(); window.addEventListener('scroll',onScroll);
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*80)+'ms';io.observe(el);});
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    const n=document.getElementById('f-nombre').value.trim()||'—';
+    const c=document.getElementById('f-combo').value;
+    const d=document.getElementById('f-dia').value.trim()||'por confirmar';
+    const p=document.getElementById('f-personas').value.trim()||'—';
+    let texto='¡Hola Brisket House! 🔥 Quiero hacer un pedido:\n\n🥩 Combo: '+c+'\n👤 Nombre: '+n+'\n📅 Para: '+d+'\n👥 Personas: '+p+'\n\n¿Me confirman disponibilidad? ¡Gracias!';
+    window.open('https://wa.me/523310888915?text='+encodeURIComponent(texto),'_blank');
+  });
+</script>
+</body>
+</html>
